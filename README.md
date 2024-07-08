@@ -1,1 +1,3 @@
-# project_angularJS
+- SET UP Project
+-  npm install json-server
+- npx json-server db.json
