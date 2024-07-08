@@ -1,0 +1,81 @@
+<h2>Quản Lý Sản Phẩm :</h2>
+<form>
+    <div class="mb-3">
+      <label for="nameProduct" class="form-label">Tên Sản Phẩm</label>
+      <input type="text" class="form-control" id="nameProduct" aria-describedby="emailHelp"   ng-model="data.name">
+    </div>
+    <p class="alert alert-danger" ng-show="validate.name">Tên không được để trống</p>
+
+    <div class="mb-3">
+        <label for="imageProduct" class="form-label">Ảnh</label>
+        <input type="text" class="form-control" id="imageProduct" aria-describedby="emailHelp"  ng-model="data.image">
+      </div>
+      <p class="alert alert-danger" ng-show="validate.image">Hình ảnh không được để trống</p>
+
+
+    <div class="mb-3">
+      <label for="priceProduct" class="form-label">Giá</label>
+      <input type="number" class="form-control" id="priceProduct"  ng-model="data.price">
+    </div>
+    <p class="alert alert-danger" ng-show="validate.price">Giá không được để trống</p>
+
+   
+    <div class="mb-3">
+        <label for="nguongoc" class="form-label">Nguồn Gốc</label>
+        <input type="text" class="form-control" id="nguongoc" aria-describedby="emailHelp"  ng-model="data.nguongoc">
+      </div>
+      <p class="alert alert-danger" ng-show="validate.nguongoc">Nguồn gốc không được để trống</p>
+
+
+      <div class="mb-3">
+        <label for="loaicf" class="form-label">Loại Cà phê</label>
+        <input type="text" class="form-control" id="loaicf" aria-describedby="emailHelp"  ng-model="data.category">
+      </div>
+      <p class="alert alert-danger" ng-show="validate.category">Loại cà phê không được để trống</p>
+
+
+      <div class="mb-3">
+        <label for="mota" class="form-label">Mô tả</label>
+        <textarea  cols="30" rows="3" class="form-control" id="mota" aria-describedby="emailHelp" ng-model="data.mota"></textarea>
+      </div>
+      <p class="alert alert-danger" ng-show="validate.mota">Mô tả không được để trống</p>
+
+    <button type="button" class="btn btn-primary" ng-click="submit()" ng-show="idUpdate == ''">Submit</button>
+    <button type="button" class="btn btn-primary" ng-click="confirmUpdate()" ng-show="idUpdate != ''">Submit</button>
+  </form>
+
+  <div class="input-group mt-3">
+    <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm theo tên" ng-model="tenSP">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Tìm kiếm</button>
+  </div>
+<table class="table table-striped">
+    <thead>
+        <tr class="highlight">
+            <th scope="col">#</th>
+            <th scope="col">Người tạo</th>
+            <th scope="col" ng-click="sortData('name')">Tên</th>
+            <th scope="col" ng-click="sortData('image')">Hình Ảnh</th>
+            <th scope="col" ng-click="sortData('price')">Giá</th>
+            <th scope="col" ng-click="sortData('nguongoc')">Nguồn gốc</th>
+            <th scope="col" ng-click="sortData('nacategorymeNV')">Loại cà phê</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="(index,value) in ListProducts | filter:{name:tenSP}  | orderBy:columName:reverse">
+            <th scope="row">{{index +1}}</th>
+            <th>{{value.taikhoan}}</th>
+            <td>{{value.name}}</td>
+            <td><img src="{{value.image}}" alt="loi" width="100"></td>
+            <td>{{value.price | currency:'':0}} VND</td>
+            <td>{{value.nguongoc}}</td>
+            <td>{{value.category}}</td>
+            <td>
+                <button class="btn btn-warning" ng-click="updateProduct(value.id)">Sửa</button>
+                <button class="btn btn-danger" ng-click="delete(value.id)">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+  

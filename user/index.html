@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style CSS -->
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Links -->
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+
+
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Aos Animation -->
+
+</head>
+<body ng-app="myApp">
+    
+    
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
+
+            <div class="content">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                    
+                <ul class="links">
+
+                    <li><a href="#!/">TrangChủ</a></li>
+                    <li><a href="#!/danh-sach">DanhSách</a></li>
+                    <li><a href="#">About</a></li>
+                    <li ng-controller="header"> 
+                       <p ng-show="showHello">  XinChào:{{nameAccount}} </p>
+                    </li>
+                    <li ng-controller="header">
+                        <button ng-show="taiKhoanSuccess" class="btn btn-light ms-2 me-2" style="background-color: #d58b3c; border:1px solid #b16f27; " ng-click="logout()">ĐăngXuất</button>
+                        <a href="../login.html" ng-show="taiKhoanFail" class="btn btn-light ms-2" style="background-color: #d58b3c; border:1px solid #b16f27; ">ĐăngNhập</a>
+                    </li>
+                    <li>
+                        <a href="#!/myCart"><i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i></a>   
+                     </li>
+                </ul>   
+
+                   <!-- header -->
+                   <!-- Xin chào: <span ng-controller="header">{{nameAccount}}</span><a href=""><i class="fa-solid fa-user-large"></i></a>
+                   <button ng-click="logout()">Đăng Xuất</button> -->
+               <!-- header --> 
+            </div>
+
+        
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+     <!-- nội dung --> <div ng-view></div>
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <p>Thương Hiệu Việt
+                <br>Mang Tầm Sắc Thái
+            </p>
+            <div class="social-links">
+
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="twitter">
+                    <i class="fab fa-twitter" style="margin-right: 14px;"></i>
+                </span>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook">
+                    <i class="fab fa-facebook" style="margin-right: 14px;"></i>
+                </span>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="instagram">
+                    <i class="fab fa-instagram" style="margin-right: 14px;"></i>
+                </span>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="linkedin">
+                    <i class="fab fa-linkedin" style="margin-right: 14px;"></i>
+                </span>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="pinterest">
+                    <i class="fab fa-pinterest" style="margin-right: 14px;"></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
+    <script src="../admin/controllers/ListProductController.js"></script>
+
+
+    <script>
+        AOS.init();
+
+        var myApp = angular.module("myApp", ['ngRoute']);
+
+
+        myApp.config(($routeProvider)=>{
+                $routeProvider
+                .when("/", {
+                    templateUrl: "views/listProductsHome.html",
+                    controller: ListProductController
+                })
+                .when("/danh-sach",{
+                    templateUrl: "views/listProductsAll.html",
+                    controller: ListProductController
+                })
+                .when("/detailProduct/:id",{
+                    templateUrl: "views/ProductDetail.html",
+                })
+                .when("/myCart",{
+                    templateUrl: "views/myCart.html",
+                    controller: ListProductController
+                })
+                .otherwise({
+                    redirectTo: "/"
+                })
+            });
+
+
+            // function checklogin() {
+            //     if (localStorage.getItem("name") == undefined) {
+            //         window.location.href = "../login";
+            //     }
+            // }
+            // checklogin();
+      </script>
+      <script src="../admin/controllers/detailProduct.js"></script>
+      <script src="../admin/controllers/HeaderController.js"></script>
+</body>
+</html>

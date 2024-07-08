@@ -1,0 +1,183 @@
+{
+  "product": [
+    {
+      "id": "4948",
+      "name": "Cà phê đen",
+      "image": "http://127.0.0.1:5501/user/images/m6.png",
+      "price": 120000,
+      "nguongoc": "Hà Nội",
+      "category": "capochino 123",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "7a5b",
+      "name": "Cà phê smile",
+      "image": "http://127.0.0.1:5501/user/images/m5.png",
+      "price": 90000,
+      "nguongoc": "Ninh Binh",
+      "category": "capuchinoo",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "6967",
+      "name": "Cà phê muối",
+      "image": "http://127.0.0.1:5501/user/images/m4.png",
+      "price": 70000,
+      "nguongoc": "Hà Nội",
+      "category": "capuchinoo",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "c8b4",
+      "name": "Cà phê trái tim",
+      "image": "http://127.0.0.1:5501/user/images/m1.png",
+      "price": 50000,
+      "nguongoc": "Hà Nội",
+      "category": "absaatw",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "be61",
+      "name": "Cà phê sữa",
+      "image": "http://127.0.0.1:5501/user/images/m2.png",
+      "price": 130000,
+      "nguongoc": "Ninh Binh",
+      "category": "capochino 123",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "5298",
+      "name": "Cà phê đá KD",
+      "image": "http://127.0.0.1:5501/user/images/m3.png",
+      "price": 125000,
+      "nguongoc": "Ninh Binh",
+      "category": "capochino",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "40de",
+      "name": "Cà phê muối ss2",
+      "image": "http://127.0.0.1:5501/user/images/m4.png",
+      "price": 40000,
+      "nguongoc": "hà nội",
+      "category": "absaatw",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "7ddb",
+      "name": "Cà phê lúa mạch",
+      "image": "http://127.0.0.1:5501/user/images/m7.png",
+      "price": 120000,
+      "nguongoc": "Ninh Binh",
+      "category": "capochino 123",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê"
+    },
+    {
+      "id": "eac7",
+      "name": "Cà phê sữa ít đường",
+      "image": "http://127.0.0.1:5501/user/images/m2.png",
+      "price": 130000,
+      "nguongoc": "Cà mau",
+      "category": "hạt nhỏ",
+      "mota": "Cà phê là một trong những thức uống phổ biến nhất trên thế giới, được làm từ hạt của cây cà phê. Đây không chỉ là một loại đồ uống mà còn là một phần của nền văn hóa và lối sống của nhiều người trên khắp thế giới. Dưới đây là một số mô tả về cà phê",
+      "createdBy": {
+        "id": "1",
+        "username": "admin",
+        "name": "Admin",
+        "role": "1"
+      }
+    },
+    {
+      "id": "38fc",
+      "name": "Cà phê hihi",
+      "image": "http://127.0.0.1:5501/user/images/m2.png",
+      "price": 123123,
+      "nguongoc": "Ninh Bình",
+      "category": "Capochino",
+      "mota": "hihihohohahaa",
+      "taikhoan": "Chinh"
+    },
+    {
+      "id": "88f0",
+      "name": "1123",
+      "image": "123",
+      "price": 123,
+      "nguongoc": "123",
+      "category": "1132",
+      "mota": "123",
+      "taikhoan": "Chinh"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "name": "Admin",
+      "role": "1"
+    },
+    {
+      "id": "5cd9",
+      "username": "chinh",
+      "password": "123",
+      "name": "123",
+      "sdt": 912309123,
+      "address": "Ninh vân hoa lư ninh bình",
+      "role": "1"
+    },
+    {
+      "id": "3d58",
+      "username": "123",
+      "password": "123",
+      "name": "123",
+      "sdt": "123",
+      "address": "123",
+      "role": "0"
+    },
+    {
+      "id": "cf70",
+      "username": "hihi",
+      "password": "123",
+      "name": "Chinh",
+      "sdt": "123",
+      "address": "Ninh vân hoa lư ninh bình",
+      "role": "0"
+    },
+    {
+      "id": "71b7",
+      "username": "hoho",
+      "password": "123",
+      "name": "Chinh",
+      "sdt": "0942094662",
+      "address": "Ninh vân hoa lư ninh bình",
+      "role": "0"
+    }
+  ],
+  "myCart": [
+    {
+      "id": "6967",
+      "name": "Cà phê muối",
+      "price": 70000,
+      "image": "http://127.0.0.1:5501/user/images/m4.png",
+      "soluong": 1,
+      "id_user": "3d58"
+    },
+    {
+      "id": "7a5b",
+      "name": "Cà phê smile",
+      "price": 90000,
+      "image": "http://127.0.0.1:5501/user/images/m5.png",
+      "soluong": 1,
+      "id_user": "3d58"
+    },
+    {
+      "id": "7a5b",
+      "name": "Cà phê smile",
+      "price": 90000,
+      "image": "http://127.0.0.1:5501/user/images/m5.png",
+      "soluong": 1,
+      "id_user": "71b7"
+    }
+  ],
+  "bill": []
+}

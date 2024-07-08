@@ -1,0 +1,78 @@
+
+
+
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu">
+
+        <h3>Danh Sách Sản Phẩm</h3> 
+
+        <div class="input-group mt-3">
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm theo tên" ng-model="tenSP">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Tìm kiếm</button>
+        </div>
+        <div class="input-group mt-3">
+            <select class="form-select" ng-model="selectedOption">
+                <option value="">Tất cả</option>
+                <option value="">Dưới 500</option>
+                <option value="">Trên 500</option>
+            </select>
+        </div>
+        
+
+        <div class="row"  data-aos="fade-up" data-aos-duration="1500">
+
+            <div class="col-md-3 py-3 py-md-0" ng-repeat="(index,value) in ListProducts | filter:{name:tenSP}">
+                <div class="card mt-3">
+                    <img src="{{value.image}}" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>{{value.name}} <span>{{value.price| currency:'':0}} VND</span></h3>
+                    <p>{{value.mota| limitTo: 50}}...</p>
+                    <h6><button id="btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal">Mua Ngay</button><a href="#!/detailProduct/{{value.id}}" id="btn2" class="btn">Xem chi tiết</a>
+                    </h6>
+
+                </div>
+            </div>
+          
+
+        </div>
+
+
+    </section>
+    <!-- Menu Section End -->
+
+
+
+
+
+    <!-- Order Section Start -->
+    <section class="order" id="order"  data-aos="fade-up"
+    data-aos-duration="1500">
+    </section>
+    <!-- Order Section End -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo Nè</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Mua Hàng Thành Công
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

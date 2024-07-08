@@ -1,0 +1,207 @@
+   
+   <!-- Home Section Start -->
+    <section class="home">
+
+        <div class="home-content"  data-aos="zoom-in-down">
+            <h3>Thưởng thức <span>Cofee</span></h3>
+            <h3>Before Your Activity</h3>
+            <p>Cà phê Ninh Bình là một loại đồ uống phổ biến trên toàn thế giới, được làm từ hạt cà phê rang xay.</p>
+            
+
+        </div>
+
+        <div class="img" data-aos="zoom-in-left"> 
+            <img src="./images/bg.png" alt="">
+        </div>
+
+    </section>
+    <!-- Home Section End -->
+
+
+
+    <!-- Top Card Start -->
+    <section class="top-card" id="tp-card" data-aos="fade-up"
+    data-aos-duration="1500">
+
+
+        <h3>Tại sao chúng ta khác nhau?</h3>
+        <p>Chúng tôi không chỉ pha cà phê cho bạn, chúng tôi còn tạo nên ngày mới của bạn!</p>
+
+        <div class="row">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/coffee-beans 1.png" alt="">
+                    <h2>Supreme Coffee</h2>
+                    <p>Xin chào, thật sự là một nỗi đau khi phải theo dõi. Chúng tôi tận dụng việc cung cấp miễn phí các ổ đĩa này và cung cấp cho họ rất nhiều kiến ​​thức.</p>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/badge 1.png" alt="">
+                    <h2>High Quality</h2>
+                    <p>Xin chào, thật sự là một nỗi đau khi phải theo dõi. Chúng tôi tận dụng việc cung cấp miễn phí các ổ đĩa này và cung cấp cho họ rất nhiều kiến ​thức.</p>
+
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/coffee-cup 1.png" alt="">
+                    <h2>Extraordinary</h2>
+                    <p>Xin chào, thật sự là một nỗi đau khi phải theo dõi. Chúng tôi tận dụng việc cung cấp miễn phí các ổ đĩa này và cung cấp cho họ rất nhiều kiến ​​thức.</p>
+
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/best-price 1.png" alt="">
+                    <h2>Affordable Prices</h2>
+                    <p>Xin chào, thật sự là một nỗi đau khi phải theo dõi. Chúng tôi tận dụng việc cung cấp miễn phí các ổ đĩa này và cung cấp cho họ rất nhiều kiến ​​thức.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Top Card End -->
+
+
+
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu">
+
+        <h3>Menu</h3>
+        <div class="row"  data-aos="fade-up" data-aos-duration="1500">
+
+            <div class="col-md-3 py-3 py-md-0" ng-repeat="(index,value) in ListProducts | limitTo: 8">
+                <div class="card mt-3">
+                    <img src="{{value.image}}" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>{{value.name}} <span>{{value.price| currency:'':0}} VND</span></h3>
+                    <p>{{value.mota| limitTo: 50}}...</p>
+                    <h6>
+                        <!-- <button id="btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal">Mua Ngay</button> -->
+                        <button id="btn1" class="btn" ng-click="themgiohang(value)">Thêm vào giỏ hàng</button>
+                        <a href="#!/detailProduct/{{value.id}}" id="btn2" class="btn">Xem chi tiết</a>
+                    </h6>
+
+                </div>
+            </div>
+          
+
+        </div>
+
+
+    </section>
+    <!-- Menu Section End -->
+
+
+    <!-- Banner Start -->
+    <div class="banner"  data-aos="fade-up"
+    data-aos-duration="1500">
+        <div class="banner-content">
+            <h3>Các sản phẩm cà phê tốt nhất <br>Của chúng tôi</h3>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+
+    <!-- About Section Start -->
+    <section class="about" id="about"  data-aos="fade-up"
+    data-aos-duration="1500">
+
+        <div class="row">
+            <div class="col-md-5 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-7 py-3 py-md-0">
+
+                <h5>About us</h5>
+                <h3>Coffee Shop</h3>
+                <p>Bản thân công ty đã là một công ty rất thành công. Tất cả những điều đó, đối với những người mù quáng này, có ngăn ngừa được những rắc rối khác hiện tại, chẳng hạn như những cơn đau hay những cơn đau thể xác? Liệu điều đó có xảy ra với một người chỉ tìm thấy niềm vui, thường xuyên hay không, bằng cách chịu đựng sự khao khát lớn lao của những người tố cáo? Nhiệm vụ của chuyến bay hạnh phúc nối tiếp chúng ta, phải làm với nỗi đau mà anh ta bị đẩy lùi bởi lao động tội lỗi. Tâm trí, nỗi đau khác!</p>
+                <p>Bản thân công ty đã là một công ty rất thành công. Tất cả những điều đó, đối với những người mù quáng này, có ngăn ngừa được những rắc rối khác hiện tại, chẳng hạn như những cơn đau hay những cơn đau thể xác? Liệu điều đó có xảy ra với một người chỉ tìm thấy niềm vui, thường xuyên hay không, bằng cách chịu đựng sự khao khát lớn lao của những người tố cáo? Nhiệm vụ của chuyến bay hạnh phúc nối tiếp chúng ta, phải làm với nỗi đau mà anh ta bị đẩy lùi bởi lao động tội lỗi. Tâm trí, nỗi đau khác!</p>
+                <button id="about-btn"  data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Read More...</button>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body mt-1">
+                        Bản thân công ty đã là một công ty rất thành công. Tất cả những điều đó, đối với những người mù quáng này, có ngăn ngừa được những rắc rối khác hiện tại, chẳng hạn như những cơn đau hay những cơn đau thể xác? Liệu điều đó có xảy ra với một người chỉ tìm thấy niềm vui, thường xuyên hay không, bằng cách chịu đựng sự khao khát lớn lao của những người tố cáo? Nhiệm vụ của chuyến bay hạnh phúc nối tiếp chúng ta, phải làm với nỗi đau mà anh ta bị đẩy lùi bởi lao động tội lỗi. Tâm trí, nỗi đau khác!
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Section End -->
+
+
+    <!-- Order Section Start -->
+    <section class="order" id="order"  data-aos="fade-up"
+    data-aos-duration="1500">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <input type="text" class="form-control" placeholder="Tên" required>
+                <input type="number" class="form-control" placeholder="Số điện thoại" required>
+                <input type="text" class="form-control" placeholder="Bạn Muốn Gì ?" required>
+                <input type="number" class="form-control" placeholder="Số lượng" required>
+                <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+
+                <button>
+                    <span>Đặt Hàng Ngay</span>
+                </button>
+
+            </div>
+
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="order-info">
+                    <h3>Đặt hàng ngay</h3>
+                    <p>Bản thân khách hàng, khách hàng sẽ có thể theo đuổi mục tiêu phát triển của công ty. Vì trong từng chi tiết nhỏ nhất, tôi có nên giải thích những điều về cơ thể nếu có tiếp tục không?</p>
+
+                    <div class="list">
+                        <li><a href="#">+0942.094.662</a></li>
+                        <li><a href="#">coffeeshop@gmail.com</a></li>
+                        <li><a href="#">Ninh Bình</a></li>
+                    </div>
+                  
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Order Section End -->
+
+
+
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo Nè</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Mua Hàng Thành Công
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

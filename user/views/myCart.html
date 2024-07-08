@@ -1,0 +1,33 @@
+<!-- Top Card Start -->
+<section class="top-card" id="tp-card">
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="(index,sp) in listCart">
+                <td>  
+                    <button ng-click="deleteCart(sp.id)" class="btn btn-danger">X</button>
+                </td>
+                <td>{{index + 1}}</td>
+                <td>{{sp.name}}</td>
+                <td><img ng-src="{{sp.image}}" alt="{{sp.name}}" width="200"></td>
+                <td>{{sp.price | currency:'':0}} VNĐ</td>
+                <td>{{sp.soluong}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <p style="color:red">Tổng Đơn Hàng Là : {{tong | currency:'':0}} VNĐ</p>
+
+    <button class="btn btn-success">Mua Hàng</button>
+    <button class="btn btn-danger" ng-click="xoaAllCart()">Xóa tất cả</button>
+</section>
+<!-- Top Card End -->

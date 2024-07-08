@@ -1,0 +1,46 @@
+
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu" ng-controller="detailProduct">
+        <h3>Chi Tiết Sản Phẩm</h3>
+        <div class="container">
+        
+            <div class="row">
+              <div class="col-md-6">
+                <img src="{{product.image}}" class="img-fluid" alt="Product 1">
+              </div>
+              <div class="col-md-6">
+                <h2>{{product.name}}</h2>
+                <p>{{product.mota}}</p>
+                <p>Giá Chỉ Từ : </p><p class="text-danger">{{product.price | currency:'':0}} VND</p>
+                <p>Nguồn gốc: {{product.nguongoc}}</p>
+                <p>Loại cà phê: {{product.category}}</p>
+                <button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Mua Ngay</button>
+              </div>
+            </div>
+          </div>
+
+
+        
+    </section>
+    <!-- Menu Section End -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thông Báo Nè</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Mua Hàng Thành Công
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
